@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">UI-Design</string>
+    <string name="valueResendCode"><u>Resend Code</u></string>
+    <string name="valueForgetPassword"><u>Forget Password</u></string>
+    <string name="valueSignIn"><u>Already have an account? Sign in</u></string>
 
 </resources>

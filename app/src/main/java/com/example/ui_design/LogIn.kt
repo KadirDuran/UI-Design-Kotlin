@@ -1,5 +1,6 @@
 package com.example.ui_design
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,15 @@ class LogIn : AppCompatActivity() {
         binding = ActivityLogInBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+        binding.btnLogin.setOnClickListener {
+            StartActivity()
+        }
+        binding.lblForgerPassword.setOnClickListener {
+            StartActivity()
+        }
 
+    }
+    fun StartActivity(){
+        startActivity(Intent(this,Account_Verification::class.java))
     }
 }

@@ -16,9 +16,15 @@ class SignUp : AppCompatActivity() {
 
 
         binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this,LogIn::class.java)).apply {
-                //putExtra("Key", value) değer gönderilebilir.
-            }
+            StartActivity()
+        }
+        binding.lblSignIn.setOnClickListener {
+            StartActivity()
+        }
+    }
+    fun StartActivity(){
+        startActivity(Intent(this,LogIn::class.java)).apply {
+            //putExtra("Key", value) değer gönderilebilir.
         }
     }
 }

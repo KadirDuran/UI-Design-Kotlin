@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/textSignUpColor"
+    tools:context=".Account_Verification">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="-15dp"
+        android:layout_marginTop="-15dp"
+        app:srcCompat="@drawable/pets" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:fontFamily="@font/moresugarregular"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Verify Your Email" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_marginTop="10sp"
+        android:textColor="@color/textPetShopColor"
+        android:fontFamily="@font/moresugarregular"
+        android:layout_gravity="center"
+        android:text="Pet Shop" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/cat_view"
+        android:layout_gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottom_shape"
+        android:orientation="vertical"
+        android:paddingHorizontal="40sp"
+        android:layout_marginTop="-20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:layout_marginTop="40sp"
+            android:textColor="@color/textSignUpColor"
+            android:text="Account Verification" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15sp"
+            android:textColor="@color/textSignUpColor"
+            android:text="Please enter the 4 digit code\nsent to Your Email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/txtChar1"
+                android:layout_width="0dp"
+                android:layout_height="64sp"
+                android:background="@drawable/button_bg"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="5sp"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+            <EditText
+                android:id="@+id/txtChar2"
+                android:layout_width="0dp"
+                android:layout_height="64sp"
+                android:background="@drawable/button_bg"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="5sp"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+            <EditText
+                android:id="@+id/txtChar3"
+                android:layout_width="0dp"
+                android:layout_height="64sp"
+                android:background="@drawable/button_bg"
+                android:ems="10"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="5sp"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+            <EditText
+                android:id="@+id/txtChar4"
+                android:layout_width="0dp"
+                android:layout_height="64sp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5sp"
+                android:textAlignment="center"
+                android:background="@drawable/button_bg"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="1"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lblResendCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/textSignUpColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50sp"
+            android:text="@string/valueResendCode" />
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:padding="10sp"
+            android:textColor="@color/textSignUpColor"
+            android:layout_marginTop="25sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Verify" />
+    </LinearLayout>
+</LinearLayout>

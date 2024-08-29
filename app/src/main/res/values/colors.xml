@@ -6,5 +6,6 @@
     <color name="bottomPanel">#bf592b</color>
     <color name="textPetShopColor">#bf592b</color>
     <color name="textSignUpColor">#fff</color>
+    <color name="btnVerification">#edbea4</color>
 
 </resources>

@@ -69,14 +69,9 @@
                 android:layout_weight="1"
                 android:text="Sign Up"
                 android:textColor="@color/textSignUpColor"
-                android:textSize="32sp" />
+                android:textSize="32sp"
+                android:gravity="center"/>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_gravity="end"
-                android:src="@drawable/pets_white"/>
 
         </LinearLayout>
 
@@ -158,5 +153,15 @@
             android:background="@drawable/button_bg"
             android:textColor="@color/textSignUpColor"
             android:text="Next" />
+
+        <TextView
+            android:id="@+id/lblSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:gravity="center_horizontal|bottom"
+            android:layout_marginBottom="20sp"
+            android:text="@string/valueSignIn" />
     </LinearLayout>
 </LinearLayout>
